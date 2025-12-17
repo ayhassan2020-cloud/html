@@ -1,0 +1,125 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>New Project</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+fieldset {
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+legend {
+    font-weight: bold;
+    color: #555;
+    padding: 0 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus {
+    border-color: #007BFF;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0,123,255,0.3);
+}
+
+/* Flex container for buttons */
+.button-group {
+    display: flex;
+    justify-content: space-between; /* kala fogee badhamada */
+    gap: 10px; /* space dheeraad ah */
+}
+
+button {
+    flex: 1; /* Badhamadu isku le'eg */
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button.submit {
+    background-color: #007BFF;
+}
+
+button.submit:hover {
+    background-color: #0056b3;
+}
+
+button.reset {
+    background-color: #6c757d;
+}
+
+button.reset:hover {
+    background-color: #5a6268;
+}
+
+button.delete {
+    background-color: #dc3545;
+}
+
+button.delete:hover {
+    background-color: #c82333;
+}
+</style>
+</head>
+<body>
+<h1>Trying to create New Project</h1>
+<fieldset>
+    <legend>Employee Form</legend>
+    <div>
+        <label for="text">Full Name:</label>
+        <input placeholder="Enter your full name" type="text" id="text" name="text">
+    </div>
+
+    <!-- Buttons -->
+    <div class="button-group">
+        <button type="submit" class="submit">Submit</button>
+        <button type="reset" class="reset">Reset</button>
+        <button type="button" class="delete" onclick="deleteData()">Delete</button>
+    </div>
+</fieldset>
+
+<script>
+function deleteData() {
+    if (confirm("Ma hubtaa inaad tirtireyso xogtan?")) {
+        document.getElementById("text").value = "";
+        alert("Xogta waa la tirtiray!");
+    }
+}
+</script>
+</body>
+</html>

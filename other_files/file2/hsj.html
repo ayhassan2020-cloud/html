@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      legend {
+        text-align: center; color: blue; font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend>Hay'adda Socdalka iyo Jinsiyadda</legend>
+
+        <!-- First, Middle, Last Name -->
+        <div style="display: flex; gap: 10px; margin-bottom: 20px">
+          <div style="flex: 1; display: flex; flex-direction: column; gap: 5px">
+            <label for="fname">First Name</label>
+            <input id="fname" type="text" placeholder="Enter Your First Name" />
+          </div>
+
+          <div style="flex: 1; display: flex; flex-direction: column; gap: 5px">
+            <label for="mname">Middle Name</label>
+            <input
+              id="mname"
+              type="text"
+              placeholder="Enter Your Middle Name"
+            />
+          </div>
+
+          <div style="flex: 1; display: flex; flex-direction: column; gap: 5px">
+            <label for="lname">Last Name</label>
+            <input id="lname" type="text" placeholder="Enter Your Last Name" />
+          </div>
+        </div>
+
+        <!-- Mother's Name -->
+        <div style="margin-bottom: 20px">
+          <div style="flex: 1; display: flex; flex-direction: column; gap: 5px">
+            <label for="mother">Mother's Name</label>
+            <input
+              id="mother"
+              type="text"
+              placeholder="Enter Your Mother's Name"
+            />
+          </div>
+        </div>
+
+        <!-- Place Of Birth, Country & Date of Birth, -->
+        <div style="display: flex; gap: 10px; margin-bottom: 20px">
+          <div style="flex: 1; display: flex; flex-direction: column; gap: 5px">
+            <label for="pob">Place Of Birth:</label>
+            <input id="pob" type="text" placeholder="Enter Place Of Birth" />
+          </div>
+
+          <div style="flex: 1; display: flex; flex-direction: column; gap: 5px">
+            <label for="country">Country:</label>
+            <input id="country" type="text" placeholder="Enter Your Country" />
+          </div>
+
+          <div style="flex: 1; display: flex; flex-direction: column; gap: 5px">
+            <label for="dob">Date Of Birth:</label>
+            <input id="dob" type="date" />
+          </div>
+        </div>
+
+        <!-- Occupation, Sex, and Marital -->
+        <div style="display: flex; gap: 10px; margin-bottom: 20px">
+          <div style="flex: 1; display: flex; flex-direction: column; gap: 5px">
+            <label for="job">Occupation:</label>
+            <input id="job" type="text" placeholder="Enter Your Occupation" />
+          </div>
+          <div style="flex: 1; display: flex; flex-direction: column; gap: 5px">
+            <label for="sex" style="font-weight: bold">Sex:</label>
+            <select id="sex" style="font-weight: bold">
+              <option>Male</option>
+              <option>Female</option>
+              <option>Others</option>
+            </select>
+          </div>
+          <div style="flex: 1; display: flex; flex-direction: column; gap: 5px">
+            <label for="marital">Marital Status:</label>
+            <select id="marital">
+              <option>Single</option>
+              <option>Married</option>
+              <option>Divorce</option>
+              <option>Widowed</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Occupation, Applied place & Tellphone -->
+        <div style="display: flex; gap: 10px; margin-bottom: 20px">
+          <div style="flex: 1; display: flex; flex-direction: column; gap: 5px">
+            <label for="apply">The Place He/She Applied To:</label>
+            <input id="apply" type="text" placeholder="Enter The Place" />
+          </div>
+
+          <div style="flex: 1; display: flex; flex-direction: column; gap: 5px">
+            <label for="tel">Telephone Number:</label>
+            <input id="tel" type="tel" placeholder="Enter Your Tel" />
+          </div>
+        </div>
+
+        <div
+          style="
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            margin-bottom: 20px;
+          "
+        >
+          <label for="oldpass">Baasaboor hore:</label>
+          <select id="oldpass">
+            <option>Haa</option>
+            <option>Maya</option>
+          </select>
+        </div>
+
+        <!-- Declaration -->
+        <div>
+          <textarea id="Declaration" rows="5" style="width: 100%">
+Waxaan qirayaa in ay sax tahay Xogta sare ku qoran</textarea
+          >
+        </div>
+
+        <!-- Signature -->
+        <div class="col">
+          <label for="signature">Signature</label>
+          <input
+            type="text"
+            id="signature"
+            placeholder="Saxiixaaga halkan geli"
+          />
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>

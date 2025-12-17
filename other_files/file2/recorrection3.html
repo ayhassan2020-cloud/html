@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="so">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Baasaboorhore — Haa / Maya (Radio)</title>
+    <style>
+      body {
+        font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+        padding: 20px;
+      }
+      .field {
+        margin-bottom: 12px;
+      }
+      label {
+        margin-right: 8px;
+        cursor: pointer;
+      }
+      .result {
+        margin-top: 16px;
+        font-weight: 600;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Baasaboorhore</h1>
+
+    <form id="formRadio">
+      <div class="field">
+        <span>baasaboorhore;</span>
+      </div>
+
+      <div class="field" role="radiogroup" aria-labelledby="baas-label">
+        <span id="baas-label" style="display: none"
+          >Baasaboorhore doorasho</span
+        >
+        <label>
+          <input type="radio" name="baasaboor" value="maya" /> maya box
+        </label>
+        <label>
+          <input type="radio" name="baasaboor" value="haa" /> haa box
+        </label>
+      </div>
+
+      <button type="button" onclick="showRadio()">Gudbi</button>
+    </form>
+
+    <div id="radioResult" class="result" aria-live="polite"></div>
+
+    <script>
+      function showRadio() {
+        const val = document.querySelector('input[name="baasaboor"]:checked');
+        document.getElementById("radioResult").textContent = val
+          ? "Waxaad dooratay: " + val.value
+          : "Wax doorasho lama sameyn.";
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Registration Form</title>
+
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        background: linear-gradient(to right, #55c89e, #a2f1d1);
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 140vh;
+    }
+
+    .form-container {
+        background: #cedbd6eb;
+        width: 450px;
+        padding: 28px;
+        border-radius: 15px;
+        box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+    }
+
+    fieldset {
+        border: 3px solid #51ee98;
+        border-radius: 10px;
+        padding: 30px;
+    }
+
+    legend {
+        font-size: 22px;
+        font-weight: bold;
+        color: #1a237e;
+        padding: 0 10px;
+    }
+
+    .input-box {
+        margin-bottom: 18px;
+    }
+
+    .input-box label {
+        display: block;
+        margin-bottom: 6px;
+        font-size: 16px;
+        font-weight: 600;
+        color: #111;
+    }
+
+    .input-box input,
+    .input-box select,
+    .input-box textarea {
+        width: 100%;
+        padding: 11px;
+        border: 1px solid #aaa;
+        border-radius: 8px;
+        font-size: 15px;
+        transition: 0.3s;
+    }
+
+    .input-box textarea {
+        resize: none;
+        height: 50px;
+    }
+
+    .btn {
+        width: 100%;
+        padding: 12px;
+        background: #344a45;
+        color: white;
+        font-size: 17px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 0.3s;
+        margin-top: 10px;
+        font-weight: bold;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="form-container">
+    <form>
+        <fieldset>
+            <legend>Student Registration</legend>
+
+            <div class="input-box">
+                <label>Full Name</label>
+                <input type="text" value="Ahmed Yasin Hassan">
+            </div>
+
+            <div class="input-box">
+                <label>Email Address</label>
+                <input type="email" value="ahmedyasin@example.com">
+            </div>
+
+            <div class="input-box">
+                <label>Phone Number</label>
+                <input type="text" value="0906598668">
+            </div>
+
+            <div class="input-box">
+                <label>Gender</label>
+                <select>
+                    <option selected>Male</option>
+                    <option>Female</option>
+                    <option>Other</option>
+                </select>
+            </div>
+
+            <div class="input-box">
+                <label>Date of Birth</label>
+                <input type="date" value="2001-05-12">
+            </div>
+
+            <div class="input-box">
+                <label>Student ID</label>
+                <input type="text" value="STU-2025-001">
+            </div>
+
+            <div class="input-box">
+                <label>Address</label>
+                <textarea>Hargeisa, Somaliland</textarea>
+            </div>
+
+            <div class="input-box">
+                <label>Department</label>
+                <select>
+                    <option>-- Select Department --</option>
+                    <option selected>Computer Science</option>
+                    <option>Information Technology</option>
+                    <option>Engineering</option>
+                    <option>Medicine</option>
+                </select>
+            </div>
+
+            <button class="btn" type="submit">Register</button>
+        </fieldset>
+    </form>
+</div>
+
+</body>
+</html>

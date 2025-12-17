@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arjiga Muwaadiniinta</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #e6ecf3;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 0;
+            text-align: center;
+        }
+
+        /* Logo */
+        .logo {
+            width: 100%;
+            max-width: 700px;
+            height: auto;
+            border-radius: 10px;
+            display: block;
+            margin-bottom: 0;
+        }
+
+        form {
+            background: #fff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            margin-top: 0; 
+            position: relative;
+        }
+
+        fieldset {
+            border: 2px solid #0077cc;
+            padding: 40px 20px 20px 20px;
+            border-radius: 10px;
+            position: relative;
+        }
+
+        legend {
+            font-size: 20px;
+            font-weight: bold;
+            color: #0077cc;
+            padding: 0 10px;
+        }
+
+        label {
+            font-weight: bold;
+            color: #444;
+            margin-bottom: 5px;
+        }
+
+        input,
+        select,
+        textarea {
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 15px;
+            outline: none;
+            width: 100%;
+            box-sizing: border-box;
+            transition: all 0.3s;
+            font-weight: bold;
+        }
+
+        input:focus,
+        select:focus,
+        textarea:focus {
+            border-color: #0077cc;
+            box-shadow: 0 0 8px rgba(0, 119, 204, 0.3);
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .col {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        input:hover,
+        select:hover,
+        textarea:hover {
+            border-color: #0077cc;
+        }
+
+        #signature {
+            margin-top: 10px;
+        }
+
+        /* Date input top-right inside fieldset */
+        .fieldset-date {
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: 20px;
+        }
+
+        .fieldset-date label {
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+
+        .fieldset-date input {
+            width: 180px;
+        }
+
+        button {
+            padding: 12px 30px;
+            background-color: #0077cc;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        /* Print-friendly CSS */
+        @media print {
+            body {
+                background: none;
+                -webkit-print-color-adjust: exact;
+            }
+
+            .container {
+                max-width: 100%;
+                margin: 0;
+                padding: 0;
+            }
+
+            form {
+                padding: 10px;
+                box-shadow: none;
+                border: none;
+            }
+
+            fieldset {
+                border: 1px solid black;
+                padding: 10px;
+            }
+
+            legend {
+                font-size: 16px;
+            }
+
+            input, select, textarea, label {
+                font-size: 12px;
+                padding: 6px;
+            }
+
+            .row {
+                flex-wrap: wrap;
+                gap: 10px;
+                margin-bottom: 10px;
+            }
+
+            .col {
+                flex: 1 1 45%;
+            }
+
+            .fieldset-date {
+                justify-content: flex-start;
+                margin-bottom: 10px;
+            }
+
+            textarea {
+                font-size: 12px;
+            }
+
+            #signature {
+                margin-top: 5px;
+            }
+
+            button {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Logo -->
+        <img src="logo.png" alt="Logo" class="logo">
+
+        <form>
+            <fieldset>
+                <legend>Formka diwaangalinta</legend>
+
+                <!-- Date input top-right inside fieldset -->
+                <div class="fieldset-date">
+                    <div style="display: flex; flex-direction: column; align-items: flex-start;">
+                        <label for="formDate">Taariikhda:</label>
+                        <input type="date" id="formDate" name="formDate">
+                    </div>
+                </div>
+
+                <!-- Name Fields -->
+                <div class="row">
+                    <div class="col">
+                        <label for="fname">First Name</label>
+                        <input id="fname" type="text" placeholder="Enter Your First Name" />
+                    </div>
+                    <div class="col">
+                        <label for="mname">Middle Name</label>
+                        <input id="mname" type="text" placeholder="Enter Your Middle Name" />
+                    </div>
+                    <div class="col">
+                        <label for="lname">Last Name</label>
+                        <input id="lname" type="text" placeholder="Enter Your Last Name" />
+                    </div>
+                </div>
+
+                <!-- Mother's Name -->
+                <div class="row">
+                    <div class="col">
+                        <label for="mother">Mother's Name</label>
+                        <input id="mother" type="text" placeholder="Enter Your Mother's Name" />
+                    </div>
+                </div>
+
+                <!-- Date of Birth and Sex -->
+                <div class="row">
+                    <div class="col">
+                        <label for="dob">Date Of Birth:</label>
+                        <input id="dob" type="date" />
+                    </div>
+                    <div class="col">
+                        <label for="sex">Sex:</label>
+                        <select id="sex">
+                            <option>Male</option>
+                            <option>Female</option>
+                            <option>Others</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Passport and Marital Status -->
+                <div class="row">
+                    <div class="col">
+                        <label for="oldpass">Baasaboor hore:</label>
+                        <select id="oldpass">
+                            <option>Haa</option>
+                            <option>Maya</option>
+                        </select>
+                    </div>
+                    <div class="col">
+                        <label for="marital">Marital Status:</label>
+                        <select id="marital">
+                            <option>Single</option>
+                            <option>Married</option>
+                            <option>Divorce</option>
+                            <option>Widowed</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Place of Birth and Country -->
+                <div class="row">
+                    <div class="col">
+                        <label for="pob">Place Of Birth:</label>
+                        <input id="pob" type="text" placeholder="Enter Place Of Birth" />
+                    </div>
+                    <div class="col">
+                        <label for="country">Country:</label>
+                        <input id="country" type="text" placeholder="Enter Your Country" />
+                    </div>
+                </div>
+
+                <!-- Occupation, Apply Place, Telephone -->
+                <div class="row">
+                    <div class="col">
+                        <label for="job">Occupation:</label>
+                        <input id="job" type="text" placeholder="Enter Your Occupation" />
+                    </div>
+                    <div class="col">
+                        <label for="apply">The Place He/She Applied To:</label>
+                        <input id="apply" type="text" placeholder="Enter The Place" />
+                    </div>
+                    <div class="col">
+                        <label for="tel">Telephone Number:</label>
+                        <input id="tel" type="tel" placeholder="Enter Your Tel" />
+                    </div>
+                </div>
+
+                <!-- Declaration -->
+                <div class="row">
+                    <textarea id="declaration" rows="5">Waxaan qirayaa in ay sax tahay Xogta sare ku qoran</textarea>
+                </div>
+
+                <!-- Signature -->
+                <div class="col">
+                    <label for="signature">Signature</label>
+                    <input type="text" id="signature" placeholder="Saxiixaaga halkan geli" />
+                </div>
+
+                <!-- Submit Button -->
+                <div class="row" style="justify-content: center; margin-top: 20px;">
+                    <button type="submit">Submit</button>
+                </div>
+
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>

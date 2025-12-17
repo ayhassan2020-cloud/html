@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tusaale Semantic HTML</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        line-height: 1.6;
+      }
+      header,
+      nav,
+      main,
+      footer {
+        padding: 20px;
+      }
+      header,
+      footer {
+        background: #333;
+        color: #fff;
+      }
+      nav {
+        background: #f4f4f4;
+        padding: 10px;
+      }
+      .container {
+        display: flex;
+        padding: 20px;
+      }
+      main {
+        flex: 3;
+        margin-right: 20px;
+      }
+      aside {
+        flex: 1;
+        background: #f0f0f0;
+        padding: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <h1>Barnaamijka Wararka</h1>
+      <p>Ku soo dhawow bogga wararka</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+      <a href="#">Home</a> |<a href="#">Wararka</a> |
+      <a href="#">Ciyaaraha</a> |
+      <a href="#">Nala Soo Xiriir</a>
+    </nav>
+
+    <!-- Main Layout -->
+    <div class="container">
+      <!-- Main Content -->
+      <main>
+        <article>
+          <header>
+            <h2>War cusub oo soo dhacay</h2>
+            <p><small>La daabacay: 7 Diseembar 2025</small></p>
+          </header>
+
+          <p>Maanta waxaa dhacay dhacdo muhiim ah oo dalkan ka dhacday...</p>
+
+          <section>
+            <h3>Faahfaahin</h3>
+            <p>
+              Qeybtaan waxaad ka akhriyi kartaa faahfaahinta buuxda ee
+              warbixinta.
+            </p>
+          </section>
+
+          <footer>
+            <p><em>Qoraha: Maxamed Cali</em></p>
+          </footer>
+        </article>
+      </main>
+
+      <!-- Sidebar / Additional Info -->
+      <aside>
+        <h3>Warar Degdeg ah</h3>
+        <ul>
+          <li>War degdeg ah #1</li>
+          <li>War degdeg ah #2</li>
+          <li>War degdeg ah #3</li>
+        </ul>
+      </aside>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 Barnaamijka Wararka. Xuquuqda way ilaalisan yihiin.</p>
+    </footer>
+  </body>
+</html>

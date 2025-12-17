@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arjiga Xafiiska</title>
+  </head>
+  <body>
+    <div style="display: flex; gap: 30px">
+      <div>
+        <label for="textarea">First name:</label>
+        <input type="text" />
+      </div>
+      <div>
+        <label for="textarea">Middle name</label>
+        <input type="text" />
+      </div>
+      <div>
+        <label for="text">Last name</label>
+        <input type="text" />
+      </div>
+      <br />
+    </div>
+    <br />
+    <div>
+      <label for="textarea"> Mother name</label> <br />
+      <input type="text" />
+    </div>
+    <br />
+    <div style="display: flex; gap: 150px">
+      <div>
+        <label for="Date"> Birth date </label> <br />
+        <input type="date" />
+      </div>
+      <br />
+      <div>
+        <label for="text"> Sex </label> <br />
+        <input type="text" />
+      </div>
+    </div>
+    <br />
+    <form id="formRadio">
+      <div class="field">
+        <span>Baasaboorhore:</span>
+      </div>
+      <div class="field" role="radiogroup" aria-labelledby="baas-label">
+        <span id="baas-label" style="display: none">Baasaboorhore</span> <br />
+        <label>
+          <input type="radio" name="Baasaboorhore" value="haa" /> Haa
+        </label>
+        <label>
+          <input type="radio" name="Baasaboorhore" value="maya" /> Maya
+        </label>
+      </div>
+    </form>
+    <br />
+    <br />
+    <form id="formRadio">
+      <div class="field">
+        <span>Marital Status :</span>
+      </div>
+      <br />
+      <div class="field" role="radiogroup" aria-labelledby="Marital Status">
+        <span id="baas-label" style="display: none"> Marital </span>
+        <label> <input type="radio" value="Single" />Single </label>
+        <label> <input type="radio" value="Married" /> Married </label>
+      </div>
+    </form>
+  </body>
+</html>

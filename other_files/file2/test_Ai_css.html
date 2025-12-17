@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test Form</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f5f5f5;
+        margin: 0;
+        padding: 20px;
+      }
+
+      h2 {
+        text-align: center;
+        color: #333;
+      }
+
+      form {
+        background-color: #fff;
+        padding: 30px;
+        max-width: 700px;
+        margin: 20px auto;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      }
+
+      label {
+        display: block;
+        margin-bottom: 15px;
+        font-weight: bold;
+        color: #555;
+      }
+
+      input[type="text"],
+      input[type="tel"],
+      input[type="date"],
+      select,
+      textarea {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-weight: bold;
+        font-size: 14px;
+      }
+
+      textarea {
+        resize: vertical;
+        height: 100px;
+      }
+
+      input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: bold;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+
+      .two-columns {
+        display: flex;
+        gap: 20px;
+      }
+
+      .two-columns label {
+        flex: 1;
+      }
+
+    </style>
+  </head>
+  <body>
+    <h2>Let's Test</h2>
+    <form>
+      <div class="two-columns">
+        <label>First Name
+          <input type="text" placeholder="Enter Your First Name" />
+        </label>
+        <label>Middle Name
+          <input type="text" placeholder="Enter Your Middle Name" />
+        </label>
+        <label>Last Name
+          <input type="text" placeholder="Enter Your Last Name" />
+        </label>
+      </div>
+
+      <label>Mother's Name
+        <input type="text" placeholder="Enter Your Mother's Name" />
+      </label>
+
+      <label>Date of Birth
+        <input type="date" />
+      </label>
+
+      <label>Sex
+        <select>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Others</option>
+        </select>
+      </label>
+
+      <label>Baasaboor hore
+        <select>
+          <option value="haa">Haa</option>
+          <option value="maya">Maya</option>
+        </select>
+      </label>
+
+      <label>Marital Status
+        <select>
+          <option value="single">Single</option>
+          <option value="married">Married</option>
+          <option value="divorce">Divorce</option>
+          <option value="widowed">Widowed</option>
+        </select>
+      </label>
+
+      <label>Place of Birth
+        <input type="text" placeholder="Enter Place Of Birth" />
+      </label>
+
+      <label>Country
+        <input type="text" placeholder="Enter Your Country" />
+      </label>
+
+      <label>Occupation
+        <input type="text" placeholder="Enter Your Occupation" />
+      </label>
+
+      <label>The Place He/She Applied To
+        <input type="text" placeholder="Enter The Place" />
+      </label>
+
+      <label>Telephone Number
+        <input type="tel" placeholder="Enter Your Telephone Number" />
+      </label>
+
+      <label>Declaration
+        <textarea>Waxaan qirayaa in ay sax tahay Xogta sare ku qoran</textarea>
+      </label>
+
+      <label>Signature
+        <input type="text" placeholder="Saxiixaaga halkan geli" />
+      </label>
+
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>
