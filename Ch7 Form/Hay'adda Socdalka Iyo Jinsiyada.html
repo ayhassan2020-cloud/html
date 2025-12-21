@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Foomka Diiwaangelinta</title>
+    
 </head>
 
 <body>
@@ -16,36 +17,38 @@
 
     <!-- PERSONAL INFORMATION -->
     <section>
+        <h2>Personal Information </h2>
         <fieldset>
-            <legend>Personal Information</legend>
+            <legend>Personal Details </legend>
 
             <label for="fname">First Name</label>
-            <input id="fname" type="text" placeholder="Enter Your First Name" />
+            <input id="fname" name="fname" type="text" required autocomplete="given-name" placeholder="Enter Your First Name" />
 
             <label for="mname">Middle Name</label>
-            <input id="mname" type="text" placeholder="Enter Your Middle Name" />
+            <input id="mname" name="mname" type="text" required autocomplete="middle-name" placeholder="Enter Your Middle Name" />
 
             <label for="lname">Last Name</label>
-            <input id="lname" type="text" placeholder="Enter Your Last Name" />
+            <input id="lname" name="lname" type="text" required autocomplete="family-name" placeholder="Enter Your Last Name" />
 
             <label for="mother">Mother's Name</label>
-            <input id="mother" type="text" placeholder="Enter Your Mother's Name" />
+            <input id="mother" name="mother" type="text" required autocomplete="mother-name" placeholder="Enter Your Mother's Name" />
         </fieldset>
     </section>
 
     <!-- BIRTH INFORMATION -->
     <section>
+        <h2>Birth Information</h2>
         <fieldset>
-            <legend>Birth Information</legend>
+            <legend>Birth Details </legend>
 
-            <label for="pob">Place Of Birth</label>
-            <input id="pob" type="text" placeholder="Enter Place Of Birth" />
+            <label for="pob">Place of Birth</label>
+            <input id="pob" name="pob" type="text" required placeholder="Enter Place Of Birth" />
 
             <label for="country">Country</label>
-            <input id="country" type="text" placeholder="Enter Your Country" />
+            <input id="country" name="country" type="text" required autocomplete="country-name" placeholder="Enter Your Country" />
 
-            <label for="dob">Date Of Birth</label>
-            <input id="dob" type="date" />
+            <label for="dob">Date of Birth</label>
+            <input id="dob" name="dob" type="date" required autocomplete="bday" />
         </fieldset>
     </section>
 
@@ -55,21 +58,23 @@
             <legend>Occupation & Status</legend>
 
             <label for="job">Occupation</label>
-            <input id="job" type="text" placeholder="Enter Your Occupation" />
+            <input id="job" name="occupation" type="text" required placeholder="Enter Your Occupation" />
 
             <label for="sex">Sex</label>
-            <select id="sex">
-                <option>Male</option>
-                <option>Female</option>
-                <option>Others</option>
+            <select id="sex" name="sex" required>
+                <option value="--Select Marital--"></option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Others">Others</option>
             </select>
 
             <label for="marital">Marital Status</label>
-            <select id="marital">
-                <option>Single</option>
-                <option>Married</option>
-                <option>Divorced</option>
-                <option>Widowed</option>
+            <select id="marital" name="marital" required>
+                <option value="" disabled selected>--Select Status--</option>
+                <option value="Single">Single</option>
+                <option value="Married">Married</option>
+                <option value="Divorced">Divorced</option>
+                <option value="Widowed">Widowed</option>
             </select>
         </fieldset>
     </section>

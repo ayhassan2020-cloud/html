@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>File Upload Button</title>
+</head>
+<body>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <!-- Input fayl leh multiple iyo accept -->
+        <input type="file" name="files" id="fileInput" multiple accept=".jpg, .png, image/*" style="display:none;">
+        
+        <!-- Button u muuqda user-ka -->
+        <button type="button" onclick="document.getElementById('fileInput').click();">
+            Door Faylal
+        </button>
+
+        <!-- Submit button -->
+        <button type="submit">Upload</button>
+    </form>
+</body>
+</html>
