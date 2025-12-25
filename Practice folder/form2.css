@@ -1,0 +1,79 @@
+body {
+  background-color: antiquewhite;
+}
+.form {
+  width: 400px;
+  margin: 40px;
+  padding: 20px;
+  background-color: black;
+  opacity: 70%;
+  color: white;
+  border-radius: 15px;
+}
+.form div {
+  background-color: white;
+  color: black;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+#name {
+  background-color: red;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  text-transform: capitalize;
+  text-align: left;
+  gap: 10px;
+}
+input {
+  background-color: white;
+}
+fieldset {
+  background-color: cornflowerblue;
+  color: black;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+.gender {
+  display: flex;
+  gap: 50px;
+}
+.gender label {
+  text-transform: capitalize;
+}
+legend {
+  background-color: cornflowerblue;
+  align-items: center;
+}
+div.wadanka {
+  background-color: red;
+  padding: 10px;
+  text-transform: capitalize;
+  color: white;
+} /*wuu iishaqayn layahay kana*/
+.msg label {
+  color: red;
+  display: flex;
+  flex-direction: column;
+  text-transform: capitalize;
+  margin-top: 20px;
+  background-color: blueviolet;
+}
+.msg textarea {
+  background-color: aqua;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  width: 395px;
+}
+div.sub {
+  background-color: black;
+  color: brown;
+} /* iisha qayn meyso colorku */
+
+div.sub :hover {
+  background-color: chartreuse;
+}

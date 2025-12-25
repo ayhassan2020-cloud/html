@@ -1,0 +1,12 @@
+body {background-color: blue}
+h1 {
+    color: white;
+    text-align: center;
+    background: black;
+}
+p {
+    color: brown;
+    font-size: 25px;
+    background: white;
+    padding: 20px;
+}

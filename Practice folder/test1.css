@@ -1,0 +1,10 @@
+body{background-color: antiquewhite;}
+table{background-color: burlywood;
+margin: auto;
+border-collapse: collapse;
+width: 70%;
+}
+thead{
+    background: black;
+    color: white;
+}

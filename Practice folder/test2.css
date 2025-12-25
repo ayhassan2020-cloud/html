@@ -1,0 +1,28 @@
+body{font-family: arial,sans-serif;
+    background-color: #f2f2f2;
+}
+.student {
+    width: 70%;
+    margin: 80px;
+    border-collapse: collapse;
+    background-color: chocolate;
+}
+.student th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    
+}
+.student th {
+    background-color: black; opacity: 50%;
+    color: white;
+}
+
+.student tr:hover {
+    background-color: aquamarine;
+}
+.student caption {
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}

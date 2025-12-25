@@ -1,0 +1,10 @@
+fieldset{background-color: cornflowerblue;
+display: flex;flex-direction: column;
+gap: 10px;
+width: 70%;
+margin: auto;
+padding: 40px;
+}
+legend{background-color: black;
+color: white;
+}

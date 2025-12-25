@@ -1,0 +1,60 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Test</title>
+    <link rel="stylesheet" href="formtest.css">
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Form test</legend>
+                <!--Name-->
+            <label for="text">Full name</label>
+            <input type="text" id="fullname" name="fullname" required placeholder="Enter your name">
+
+                <!--Email-->
+            <label for="text">Email</label>
+            <input type="email" id="email" name="email" placeholder=" examole@gmail.com">
+
+                <!--Password-->
+            <label for="text">Password</label>
+            <input type="password" id="password" name="password" required>
+           
+                <!--Gender-->
+            
+             <label for="male">
+                <input type="radio" id="male" name="gender">
+                Male </label>
+            
+            
+            <label for="female">
+                <input type="radio" id="female" name="gender">
+                Female
+            </label>
+
+                <!--Courses-->
+            <select name="text" id="">
+                  <option value="">--Select courses--</option>
+                  <option value="HTML"> HTML</option>
+                  <option value="CSS"> CSS</optio>
+                  <option value="JavaScript">JavaScript</optio>
+
+            </select>
+
+                <!--Agreement-->
+            <label for="text">
+                <input type="checkbox">
+                Agree terms
+            </label>
+            
+
+                <!--Submit-->
+            <input type="submit">
+            
+
+        </fieldset>
+    </form>
+    
+</body>
+</html>

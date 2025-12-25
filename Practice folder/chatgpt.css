@@ -1,0 +1,12 @@
+.students {
+  width: 100%;
+  border-collapse: collapse;
+  border-style:double;
+}
+.students th, td {border: 1px solid black; 
+    padding: 10px;
+    text-align:center;
+}
+.students th {
+  background-color: #ddd;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form2</title>
+    <link rel="stylesheet" href="form2.css">
+</head>
+<body>
+    <form action="Test1.html" method="post" class="form">
+        <div>
+        <caption>Arjiga Muwaadinka</caption>
+        </div>
+        <!--Name-->
+        <div id="name">
+        <label for="fname">Full Name</label>
+        <input type="text" id="fname" name="name" required placeholder="Enter Your Name">
+        
+        <!--Email-->
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required placeholder="example@gmail.com">
+
+        <!--Password-->
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+        </div>
+        <!--Gender-->
+        
+        <fieldset>
+  <legend>Gender</legend>
+  <div class="gender">
+  <input type="radio" id="male" name="gender" value="male" required>
+  <label for="male">Male</label>
+  <input type="radio" id="female" name="gender" value="female" required>
+  <label for="female">Female</label>
+  </div>
+</fieldset>
+
+        <!--Country-->
+        <div class="wadanka">
+        <label for="country">Country</label>
+        <select id="country" name="country" required>
+            <option value="">--Select Your Country--</option>
+            <option value="somalia">Somalia</option>
+            <option value="kenya">Kenya</option>
+            <option value="ethiopia">Ethiopia</option>
+            <option value="zambia">Zambia</option>
+            <option value="djabouti">Djabouti</option>
+            <option value="tansania">Tansania</option>
+        </select>
+            </div>
+
+        <!--Message-->
+        <div class="msg">
+        <label for="message"> Leave your comment</label>
+        <textarea id="message" name="message" required placeholder="Write your comment here" rows="5" cols="40"></textarea>
+            </div>
+        <!--Submit-->
+        <div class="sub">
+        <input type="submit" value="Submit">
+            </div>
+    </form>
+</body>
+</html>
